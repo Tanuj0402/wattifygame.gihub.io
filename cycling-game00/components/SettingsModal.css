@@ -1,0 +1,35 @@
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.setting-item label {
+  min-width: 100px;
+}
+
+.setting-item input[type="range"] {
+  flex-grow: 1;
+}
+
+.save-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+

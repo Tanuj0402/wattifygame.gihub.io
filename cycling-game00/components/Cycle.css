@@ -1,0 +1,24 @@
+.cycle {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  animation: cycle-bounce 0.5s infinite alternate;
+}
+
+.cycle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes cycle-bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+

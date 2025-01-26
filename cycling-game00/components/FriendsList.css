@@ -1,0 +1,97 @@
+.friends-list {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.friends-list h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.friends-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friends-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.friends-list li:last-child {
+  border-bottom: none;
+}
+
+.friend-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.friend-name {
+  flex-grow: 1;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+.online .status-indicator {
+  background-color: #4caf50;
+}
+
+.offline .status-indicator {
+  background-color: #ccc;
+}
+
+.add-to-lobby-btn,
+.chat-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  padding: 0;
+}
+
+.add-to-lobby-btn:hover,
+.chat-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.add-to-lobby-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.chat-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+

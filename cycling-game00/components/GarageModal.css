@@ -1,0 +1,35 @@
+.bike-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bike-item {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bike-item:hover {
+  transform: scale(1.05);
+}
+
+.bike-item.selected {
+  border-color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.bike-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.bike-item p {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
